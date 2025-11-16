@@ -1,5 +1,5 @@
 @file:Suppress("UNCHECKED_CAST")
-package moe.fuqiuluo.xposed.hooks.sensor
+package m0e.fuqiuluo.xposed.hooks.sensor
 
 import android.content.pm.FeatureInfo
 import android.content.pm.PackageManager
@@ -7,14 +7,14 @@ import android.hardware.Sensor
 import android.hardware.SensorEventListener
 import android.util.ArrayMap
 import de.robv.android.xposed.XposedHelpers
-import moe.fuqiuluo.xposed.utils.FakeLoc
-import moe.fuqiuluo.xposed.utils.Logger
-import moe.fuqiuluo.xposed.utils.afterHook
-import moe.fuqiuluo.xposed.utils.beforeHook
-import moe.fuqiuluo.xposed.utils.hookAllMethods
-import moe.fuqiuluo.xposed.utils.hookMethodAfter
-import moe.fuqiuluo.xposed.utils.onceHook
-import moe.fuqiuluo.xposed.utils.onceHookAllMethod
+import m0e.fuqiuluo.xposed.utils.FakeLoc
+import m0e.fuqiuluo.xposed.utils.Logger
+import m0e.fuqiuluo.xposed.utils.afterHook
+import m0e.fuqiuluo.xposed.utils.beforeHook
+import m0e.fuqiuluo.xposed.utils.hookAllMethods
+import m0e.fuqiuluo.xposed.utils.hookMethodAfter
+import m0e.fuqiuluo.xposed.utils.onceHook
+import m0e.fuqiuluo.xposed.utils.onceHookAllMethod
 import java.util.concurrent.ConcurrentHashMap
 
 // https://github.com/Frazew/VirtualSensor/blob/master/app/src/main/java/fr/frazew/virtualgyroscope/XposedMod.java#L298

@@ -1,17 +1,17 @@
-package moe.fuqiuluo.xposed.hooks.gnss
+package m0e.fuqiuluo.xposed.hooks.gnss
 
 import android.location.Location
 import de.robv.android.xposed.XC_MethodHook
 import de.robv.android.xposed.XposedBridge
 import de.robv.android.xposed.XposedHelpers
-import moe.fuqiuluo.xposed.BaseLocationHook
-import moe.fuqiuluo.xposed.hooks.blindhook.BlindHookLocation
-import moe.fuqiuluo.xposed.hooks.blindhook.BlindHookLocation.invoke
-import moe.fuqiuluo.xposed.utils.FakeLoc
-import moe.fuqiuluo.xposed.utils.Logger
-import moe.fuqiuluo.xposed.utils.beforeHook
-import moe.fuqiuluo.xposed.utils.hookAllMethods
-import moe.fuqiuluo.xposed.utils.onceHookAllMethod
+import m0e.fuqiuluo.xposed.BaseLocationHook
+import m0e.fuqiuluo.xposed.hooks.blindhook.BlindHookLocation
+import m0e.fuqiuluo.xposed.hooks.blindhook.BlindHookLocation.invoke
+import m0e.fuqiuluo.xposed.utils.FakeLoc
+import m0e.fuqiuluo.xposed.utils.Logger
+import m0e.fuqiuluo.xposed.utils.beforeHook
+import m0e.fuqiuluo.xposed.utils.hookAllMethods
+import m0e.fuqiuluo.xposed.utils.onceHookAllMethod
 import java.util.Collections
 
 object GnssHook: BaseLocationHook() {

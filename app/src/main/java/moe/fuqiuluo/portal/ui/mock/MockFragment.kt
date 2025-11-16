@@ -37,7 +37,7 @@ import moe.fuqiuluo.portal.ext.speed
 import moe.fuqiuluo.portal.service.MockServiceHelper
 import moe.fuqiuluo.portal.ui.viewmodel.MockServiceViewModel
 import moe.fuqiuluo.portal.ui.viewmodel.MockViewModel
-import moe.fuqiuluo.xposed.utils.FakeLoc
+import m0e.fuqiuluo.xposed.utils.FakeLoc
 
 class MockFragment : Fragment() {
     private var _binding: FragmentMockBinding? = null

@@ -1,4 +1,4 @@
-package moe.fuqiuluo.xposed.hooks
+package m0e.fuqiuluo.xposed.hooks
 
 import android.location.Location
 import android.location.LocationManager
@@ -6,14 +6,14 @@ import android.os.Build
 import de.robv.android.xposed.XC_MethodHook
 import de.robv.android.xposed.XposedBridge
 import de.robv.android.xposed.XposedHelpers
-import moe.fuqiuluo.xposed.BaseLocationHook
-import moe.fuqiuluo.xposed.hooks.blindhook.BlindHookLocation
-import moe.fuqiuluo.xposed.utils.FakeLoc
-import moe.fuqiuluo.xposed.utils.Logger
-import moe.fuqiuluo.xposed.utils.hookAllMethodsAfter
-import moe.fuqiuluo.xposed.utils.hookAllMethodsBefore
-import moe.fuqiuluo.xposed.utils.toClass
-import moe.fuqiuluo.xposed.utils.toClassOrThrow
+import m0e.fuqiuluo.xposed.BaseLocationHook
+import m0e.fuqiuluo.xposed.hooks.blindhook.BlindHookLocation
+import m0e.fuqiuluo.xposed.utils.FakeLoc
+import m0e.fuqiuluo.xposed.utils.Logger
+import m0e.fuqiuluo.xposed.utils.hookAllMethodsAfter
+import m0e.fuqiuluo.xposed.utils.hookAllMethodsBefore
+import m0e.fuqiuluo.xposed.utils.toClass
+import m0e.fuqiuluo.xposed.utils.toClassOrThrow
 import kotlin.random.Random
 
 object BasicLocationHook: BaseLocationHook() {

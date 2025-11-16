@@ -21,7 +21,7 @@ import moe.fuqiuluo.portal.service.MockServiceHelper
 import moe.fuqiuluo.portal.ui.mock.HistoricalLocation
 import moe.fuqiuluo.portal.ui.mock.HistoricalRoute
 import moe.fuqiuluo.portal.ui.mock.Rocker
-import moe.fuqiuluo.xposed.utils.FakeLoc
+import m0e.fuqiuluo.xposed.utils.FakeLoc
 import net.sf.geographiclib.Geodesic
 
 class MockServiceViewModel : ViewModel() {

@@ -1,4 +1,4 @@
-package moe.fuqiuluo.xposed.hooks.miui
+package m0e.fuqiuluo.xposed.hooks.miui
 
 import android.os.Build
 import android.telephony.CellIdentity
@@ -8,13 +8,13 @@ import android.telephony.CellInfoCdma
 import android.telephony.CellSignalStrengthCdma
 import de.robv.android.xposed.XC_MethodHook
 import de.robv.android.xposed.XposedHelpers
-import moe.fuqiuluo.xposed.BaseLocationHook
-import moe.fuqiuluo.xposed.hooks.blindhook.BlindHookLocation
-import moe.fuqiuluo.xposed.utils.BinderUtils
-import moe.fuqiuluo.xposed.utils.FakeLoc
-import moe.fuqiuluo.xposed.utils.beforeHook
-import moe.fuqiuluo.xposed.utils.onceHookAllMethod
-import moe.fuqiuluo.xposed.utils.onceHookMethodBefore
+import m0e.fuqiuluo.xposed.BaseLocationHook
+import m0e.fuqiuluo.xposed.hooks.blindhook.BlindHookLocation
+import m0e.fuqiuluo.xposed.utils.BinderUtils
+import m0e.fuqiuluo.xposed.utils.FakeLoc
+import m0e.fuqiuluo.xposed.utils.beforeHook
+import m0e.fuqiuluo.xposed.utils.onceHookAllMethod
+import m0e.fuqiuluo.xposed.utils.onceHookMethodBefore
 
 object MiuiBlurLocationProviderHook: BaseLocationHook() {
     operator fun invoke(classLoader: ClassLoader) {

@@ -1,4 +1,4 @@
-package moe.fuqiuluo.xposed.utils
+package m0e.fuqiuluo.xposed.utils
 
 import android.location.Location
 import kotlin.math.PI

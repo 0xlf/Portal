@@ -1,14 +1,14 @@
-package moe.fuqiuluo.xposed.hooks
+package m0e.fuqiuluo.xposed.hooks
 
 import android.location.Location
 import de.robv.android.xposed.XC_MethodHook
 import de.robv.android.xposed.XposedBridge
 import de.robv.android.xposed.XposedHelpers
-import moe.fuqiuluo.xposed.BaseLocationHook
-import moe.fuqiuluo.xposed.utils.FakeLoc
-import moe.fuqiuluo.xposed.utils.Logger
-import moe.fuqiuluo.xposed.utils.onceHookAllMethod
-import moe.fuqiuluo.xposed.utils.onceHookMethod
+import m0e.fuqiuluo.xposed.BaseLocationHook
+import m0e.fuqiuluo.xposed.utils.FakeLoc
+import m0e.fuqiuluo.xposed.utils.Logger
+import m0e.fuqiuluo.xposed.utils.onceHookAllMethod
+import m0e.fuqiuluo.xposed.utils.onceHookMethod
 
 object LocationManagerHook: BaseLocationHook() {
     operator fun invoke(

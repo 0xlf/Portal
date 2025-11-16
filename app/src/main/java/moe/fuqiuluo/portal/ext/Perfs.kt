@@ -7,7 +7,7 @@ import com.baidu.mapapi.map.BaiduMap
 import moe.fuqiuluo.portal.service.MockServiceHelper
 import moe.fuqiuluo.portal.ui.mock.HistoricalLocation
 import moe.fuqiuluo.portal.ui.mock.HistoricalRoute
-import moe.fuqiuluo.xposed.utils.FakeLoc
+import m0e.fuqiuluo.xposed.utils.FakeLoc
 
 val Context.sharedPrefs
     get() = getSharedPreferences(MockServiceHelper.PROVIDER_NAME, Context.MODE_PRIVATE)!!

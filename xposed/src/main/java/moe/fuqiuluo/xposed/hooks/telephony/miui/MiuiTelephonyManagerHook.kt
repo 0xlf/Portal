@@ -1,6 +1,6 @@
-package moe.fuqiuluo.xposed.hooks.telephony.miui
+package m0e.fuqiuluo.xposed.hooks.telephony.miui
 
-import moe.fuqiuluo.xposed.hooks.telephony.BaseTelephonyHook
+import m0e.fuqiuluo.xposed.hooks.telephony.BaseTelephonyHook
 
 object MiuiTelephonyManagerHook: BaseTelephonyHook() {
     operator fun invoke(classLoader: ClassLoader) {

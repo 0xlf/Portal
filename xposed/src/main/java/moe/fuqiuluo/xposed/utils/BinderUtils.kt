@@ -1,5 +1,5 @@
 @file:Suppress("LocalVariableName", "PrivateApi")
-package moe.fuqiuluo.xposed.utils
+package m0e.fuqiuluo.xposed.utils
 
 import android.content.Context
 import android.os.Binder

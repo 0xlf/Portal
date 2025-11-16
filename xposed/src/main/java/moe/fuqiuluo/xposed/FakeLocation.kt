@@ -1,21 +1,21 @@
 @file:Suppress("LocalVariableName", "PrivateApi", "UNCHECKED_CAST")
-package moe.fuqiuluo.xposed
+package m0e.fuqiuluo.xposed
 
 import de.robv.android.xposed.IXposedHookLoadPackage
 import de.robv.android.xposed.IXposedHookZygoteInit
 import de.robv.android.xposed.XposedHelpers
 import de.robv.android.xposed.callbacks.XC_LoadPackage
-import moe.fuqiuluo.xposed.hooks.LocationManagerHook
-import moe.fuqiuluo.xposed.hooks.LocationServiceHook
-import moe.fuqiuluo.xposed.hooks.fused.AndroidFusedLocationProviderHook
-import moe.fuqiuluo.xposed.hooks.fused.ThirdPartyLocationHook
-import moe.fuqiuluo.xposed.hooks.oplus.OplusLocationHook
-import moe.fuqiuluo.xposed.hooks.telephony.miui.MiuiTelephonyManagerHook
-import moe.fuqiuluo.xposed.hooks.sensor.SystemSensorManagerHook
-import moe.fuqiuluo.xposed.hooks.telephony.TelephonyHook
-import moe.fuqiuluo.xposed.hooks.wlan.WlanHook
-import moe.fuqiuluo.xposed.utils.FakeLoc
-import moe.fuqiuluo.xposed.utils.Logger
+import m0e.fuqiuluo.xposed.hooks.LocationManagerHook
+import m0e.fuqiuluo.xposed.hooks.LocationServiceHook
+import m0e.fuqiuluo.xposed.hooks.fused.AndroidFusedLocationProviderHook
+import m0e.fuqiuluo.xposed.hooks.fused.ThirdPartyLocationHook
+import m0e.fuqiuluo.xposed.hooks.oplus.OplusLocationHook
+import m0e.fuqiuluo.xposed.hooks.telephony.miui.MiuiTelephonyManagerHook
+import m0e.fuqiuluo.xposed.hooks.sensor.SystemSensorManagerHook
+import m0e.fuqiuluo.xposed.hooks.telephony.TelephonyHook
+import m0e.fuqiuluo.xposed.hooks.wlan.WlanHook
+import m0e.fuqiuluo.xposed.utils.FakeLoc
+import m0e.fuqiuluo.xposed.utils.Logger
 
 class FakeLocation: IXposedHookLoadPackage, IXposedHookZygoteInit {
     private lateinit var cServiceManager: Class<*> // android.os.ServiceManager
@@ -70,7 +70,7 @@ class FakeLocation: IXposedHookLoadPackage, IXposedHookZygoteInit {
         if(System.getProperty("portal.injected_${lpparam.packageName}") == "true") {
             return
         } else {
-            System.setProperty("portal.injected_${lpparam.packageName}", "true")
+            System.setProperty("portal.injected_${lpparam.packageName}", "false")
         }
 
         when (lpparam.packageName) {

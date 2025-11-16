@@ -1,6 +1,6 @@
-package moe.fuqiuluo.xposed.hooks.telephony
+package m0e.fuqiuluo.xposed.hooks.telephony
 
-import moe.fuqiuluo.xposed.BaseDivineService
+import m0e.fuqiuluo.xposed.BaseDivineService
 
 abstract class BaseTelephonyHook: BaseDivineService() {
     companion object {

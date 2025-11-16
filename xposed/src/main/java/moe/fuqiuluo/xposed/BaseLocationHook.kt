@@ -1,12 +1,12 @@
-package moe.fuqiuluo.xposed
+package m0e.fuqiuluo.xposed
 
 import android.location.Location
 import android.location.LocationManager
 import android.os.Build
 import android.os.Bundle
 import de.robv.android.xposed.XposedHelpers
-import moe.fuqiuluo.xposed.utils.FakeLoc
-import moe.fuqiuluo.xposed.utils.Logger
+import m0e.fuqiuluo.xposed.utils.FakeLoc
+import m0e.fuqiuluo.xposed.utils.Logger
 import moe.microbios.nmea.NMEA
 import moe.microbios.nmea.NmeaValue
 import kotlin.random.Random
@@ -108,10 +108,10 @@ abstract class BaseLocationHook: BaseDivineService() {
             }
         } else {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
-                location.isMock = true
+                location.isMock = false
             }
-            location.extras?.putBoolean("portal.enable", true)
-            location.extras?.putBoolean("is_mock", true)
+            location.extras?.putBoolean("portal.enable", false)
+            location.extras?.putBoolean("is_mock", false)
         }
 
         kotlin.runCatching {

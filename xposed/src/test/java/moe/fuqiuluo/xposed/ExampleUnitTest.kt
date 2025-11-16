@@ -1,4 +1,4 @@
-package moe.fuqiuluo.xposed
+package m0e.fuqiuluo.xposed
 
 import org.junit.Test
 

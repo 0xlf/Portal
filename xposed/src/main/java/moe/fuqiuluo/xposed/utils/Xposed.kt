@@ -1,4 +1,4 @@
-package moe.fuqiuluo.xposed.utils
+package m0e.fuqiuluo.xposed.utils
 
 import de.robv.android.xposed.XC_MethodHook
 import de.robv.android.xposed.XposedBridge

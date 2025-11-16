@@ -1,12 +1,12 @@
-package moe.fuqiuluo.xposed.hooks.fused
+package m0e.fuqiuluo.xposed.hooks.fused
 
 import android.location.Location
-import moe.fuqiuluo.xposed.BaseLocationHook
-import moe.fuqiuluo.xposed.hooks.blindhook.BlindHookLocation
-import moe.fuqiuluo.xposed.utils.FakeLoc
-import moe.fuqiuluo.xposed.utils.Logger
-import moe.fuqiuluo.xposed.utils.hookMethodAfter
-import moe.fuqiuluo.xposed.utils.toClass
+import m0e.fuqiuluo.xposed.BaseLocationHook
+import m0e.fuqiuluo.xposed.hooks.blindhook.BlindHookLocation
+import m0e.fuqiuluo.xposed.utils.FakeLoc
+import m0e.fuqiuluo.xposed.utils.Logger
+import m0e.fuqiuluo.xposed.utils.hookMethodAfter
+import m0e.fuqiuluo.xposed.utils.toClass
 
 object AndroidFusedLocationProviderHook: BaseLocationHook() {
     operator fun invoke(classLoader: ClassLoader) {

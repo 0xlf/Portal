@@ -1,17 +1,17 @@
-package moe.fuqiuluo.xposed.hooks.fused
+package m0e.fuqiuluo.xposed.hooks.fused
 
 import android.location.LocationListener
 import android.os.Bundle
 import de.robv.android.xposed.XposedHelpers
-import moe.fuqiuluo.xposed.BaseLocationHook
-import moe.fuqiuluo.xposed.hooks.blindhook.BlindHookLocation
-import moe.fuqiuluo.xposed.hooks.blindhook.BlindHookLocation.invoke
-import moe.fuqiuluo.xposed.utils.FakeLoc
-import moe.fuqiuluo.xposed.utils.Logger
-import moe.fuqiuluo.xposed.utils.hookMethodAfter
-import moe.fuqiuluo.xposed.utils.hookMethodBefore
-import moe.fuqiuluo.xposed.utils.onceHookMethodBefore
-import moe.fuqiuluo.xposed.utils.toClass
+import m0e.fuqiuluo.xposed.BaseLocationHook
+import m0e.fuqiuluo.xposed.hooks.blindhook.BlindHookLocation
+import m0e.fuqiuluo.xposed.hooks.blindhook.BlindHookLocation.invoke
+import m0e.fuqiuluo.xposed.utils.FakeLoc
+import m0e.fuqiuluo.xposed.utils.Logger
+import m0e.fuqiuluo.xposed.utils.hookMethodAfter
+import m0e.fuqiuluo.xposed.utils.hookMethodBefore
+import m0e.fuqiuluo.xposed.utils.onceHookMethodBefore
+import m0e.fuqiuluo.xposed.utils.toClass
 import java.lang.reflect.Modifier
 
 object ThirdPartyLocationHook: BaseLocationHook() {

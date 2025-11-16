@@ -1,4 +1,4 @@
-package moe.fuqiuluo.xposed.hooks.provider
+package m0e.fuqiuluo.xposed.hooks.provider
 
 import android.location.Location
 import android.location.LocationManager
@@ -9,16 +9,16 @@ import android.util.ArrayMap
 import de.robv.android.xposed.XC_MethodHook
 import de.robv.android.xposed.XposedBridge
 import de.robv.android.xposed.XposedHelpers
-import moe.fuqiuluo.xposed.hooks.BasicLocationHook.injectLocation
-import moe.fuqiuluo.xposed.hooks.blindhook.BlindHookLocation
-import moe.fuqiuluo.xposed.utils.FakeLoc
-import moe.fuqiuluo.xposed.utils.Logger
-import moe.fuqiuluo.xposed.utils.beforeHook
-import moe.fuqiuluo.xposed.utils.diyHook
-import moe.fuqiuluo.xposed.utils.hook
-import moe.fuqiuluo.xposed.utils.onceHook
-import moe.fuqiuluo.xposed.utils.onceHookAllMethod
-import moe.fuqiuluo.xposed.utils.onceHookMethodBefore
+import m0e.fuqiuluo.xposed.hooks.BasicLocationHook.injectLocation
+import m0e.fuqiuluo.xposed.hooks.blindhook.BlindHookLocation
+import m0e.fuqiuluo.xposed.utils.FakeLoc
+import m0e.fuqiuluo.xposed.utils.Logger
+import m0e.fuqiuluo.xposed.utils.beforeHook
+import m0e.fuqiuluo.xposed.utils.diyHook
+import m0e.fuqiuluo.xposed.utils.hook
+import m0e.fuqiuluo.xposed.utils.onceHook
+import m0e.fuqiuluo.xposed.utils.onceHookAllMethod
+import m0e.fuqiuluo.xposed.utils.onceHookMethodBefore
 import java.util.Collections
 import kotlin.random.Random
 

@@ -37,7 +37,7 @@ import moe.fuqiuluo.portal.ext.hookSensor
 import moe.fuqiuluo.portal.ext.needOpenSELinux
 import moe.fuqiuluo.portal.ext.speed
 import moe.fuqiuluo.portal.service.MockServiceHelper
-import moe.fuqiuluo.xposed.utils.FakeLoc
+import m0e.fuqiuluo.xposed.utils.FakeLoc
 
 class GnssMockFragment : Fragment() {
     private var _binding: FragmentGnssMockBinding? = null

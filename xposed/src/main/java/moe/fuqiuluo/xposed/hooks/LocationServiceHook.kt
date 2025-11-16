@@ -1,7 +1,7 @@
 @file:Suppress("KotlinConstantConditions")
 @file:OptIn(ExperimentalUuidApi::class)
 
-package moe.fuqiuluo.xposed.hooks
+package m0e.fuqiuluo.xposed.hooks
 
 import android.location.Location
 import android.os.Build
@@ -13,21 +13,21 @@ import android.os.Parcel
 import de.robv.android.xposed.XC_MethodHook
 import de.robv.android.xposed.XposedBridge
 import de.robv.android.xposed.XposedHelpers
-import moe.fuqiuluo.xposed.BaseLocationHook
-import moe.fuqiuluo.xposed.RemoteCommandHandler
-import moe.fuqiuluo.xposed.hooks.gnss.GnssHook
-import moe.fuqiuluo.xposed.hooks.miui.MiuiBlurLocationProviderHook
-import moe.fuqiuluo.xposed.hooks.miui.MiuiLocationManagerHook
-import moe.fuqiuluo.xposed.hooks.telephony.miui.MiuiTelephonyManagerHook
-import moe.fuqiuluo.xposed.hooks.nmea.LocationNMEAHook
-import moe.fuqiuluo.xposed.hooks.provider.LocationProviderManagerHook
-import moe.fuqiuluo.xposed.utils.FakeLoc
-import moe.fuqiuluo.xposed.utils.BinderUtils
-import moe.fuqiuluo.xposed.utils.Logger
-import moe.fuqiuluo.xposed.utils.afterHook
-import moe.fuqiuluo.xposed.utils.beforeHook
-import moe.fuqiuluo.xposed.utils.hookAllMethods
-import moe.fuqiuluo.xposed.utils.onceHookAllMethod
+import m0e.fuqiuluo.xposed.BaseLocationHook
+import m0e.fuqiuluo.xposed.RemoteCommandHandler
+import m0e.fuqiuluo.xposed.hooks.gnss.GnssHook
+import m0e.fuqiuluo.xposed.hooks.miui.MiuiBlurLocationProviderHook
+import m0e.fuqiuluo.xposed.hooks.miui.MiuiLocationManagerHook
+import m0e.fuqiuluo.xposed.hooks.telephony.miui.MiuiTelephonyManagerHook
+import m0e.fuqiuluo.xposed.hooks.nmea.LocationNMEAHook
+import m0e.fuqiuluo.xposed.hooks.provider.LocationProviderManagerHook
+import m0e.fuqiuluo.xposed.utils.FakeLoc
+import m0e.fuqiuluo.xposed.utils.BinderUtils
+import m0e.fuqiuluo.xposed.utils.Logger
+import m0e.fuqiuluo.xposed.utils.afterHook
+import m0e.fuqiuluo.xposed.utils.beforeHook
+import m0e.fuqiuluo.xposed.utils.hookAllMethods
+import m0e.fuqiuluo.xposed.utils.onceHookAllMethod
 import java.lang.reflect.InvocationTargetException
 import java.lang.reflect.Method
 import java.util.concurrent.LinkedBlockingQueue

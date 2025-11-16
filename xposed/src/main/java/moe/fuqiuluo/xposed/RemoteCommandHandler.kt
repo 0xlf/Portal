@@ -1,14 +1,14 @@
-package moe.fuqiuluo.xposed
+package m0e.fuqiuluo.xposed
 
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.os.IBinder
 import android.os.Parcel
 import moe.fuqiuluo.dobby.Dobby
-import moe.fuqiuluo.xposed.hooks.LocationServiceHook
-import moe.fuqiuluo.xposed.utils.FakeLoc
-import moe.fuqiuluo.xposed.utils.BinderUtils
-import moe.fuqiuluo.xposed.utils.Logger
+import m0e.fuqiuluo.xposed.hooks.LocationServiceHook
+import m0e.fuqiuluo.xposed.utils.FakeLoc
+import m0e.fuqiuluo.xposed.utils.BinderUtils
+import m0e.fuqiuluo.xposed.utils.Logger
 import java.util.Collections
 import kotlin.random.Random
 

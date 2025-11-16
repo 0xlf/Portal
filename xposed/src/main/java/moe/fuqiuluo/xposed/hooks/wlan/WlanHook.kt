@@ -1,5 +1,5 @@
 @file:Suppress("UNCHECKED_CAST", "PrivateApi")
-package moe.fuqiuluo.xposed.hooks.wlan
+package m0e.fuqiuluo.xposed.hooks.wlan
 
 import android.net.wifi.WifiInfo
 import android.os.Build
@@ -8,14 +8,14 @@ import dalvik.system.PathClassLoader
 import de.robv.android.xposed.XC_MethodHook
 import de.robv.android.xposed.XposedBridge
 import de.robv.android.xposed.XposedHelpers
-import moe.fuqiuluo.xposed.utils.BinderUtils
-import moe.fuqiuluo.xposed.utils.FakeLoc
-import moe.fuqiuluo.xposed.utils.Logger
-import moe.fuqiuluo.xposed.utils.afterHook
-import moe.fuqiuluo.xposed.utils.beforeHook
-import moe.fuqiuluo.xposed.utils.hookAllMethods
-import moe.fuqiuluo.xposed.utils.hookMethodAfter
-import moe.fuqiuluo.xposed.utils.toClass
+import m0e.fuqiuluo.xposed.utils.BinderUtils
+import m0e.fuqiuluo.xposed.utils.FakeLoc
+import m0e.fuqiuluo.xposed.utils.Logger
+import m0e.fuqiuluo.xposed.utils.afterHook
+import m0e.fuqiuluo.xposed.utils.beforeHook
+import m0e.fuqiuluo.xposed.utils.hookAllMethods
+import m0e.fuqiuluo.xposed.utils.hookMethodAfter
+import m0e.fuqiuluo.xposed.utils.toClass
 
 object WlanHook {
     operator fun invoke(classLoader: ClassLoader) {

@@ -1,10 +1,10 @@
-package moe.fuqiuluo.xposed.hooks.blindhook
+package m0e.fuqiuluo.xposed.hooks.blindhook
 
 import android.location.Location
 import de.robv.android.xposed.XC_MethodHook
-import moe.fuqiuluo.xposed.utils.FakeLoc
-import moe.fuqiuluo.xposed.utils.Logger
-import moe.fuqiuluo.xposed.utils.onceHook
+import m0e.fuqiuluo.xposed.utils.FakeLoc
+import m0e.fuqiuluo.xposed.utils.Logger
+import m0e.fuqiuluo.xposed.utils.onceHook
 import java.lang.reflect.Member
 
 object BlindHook {

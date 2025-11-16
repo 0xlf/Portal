@@ -1,4 +1,4 @@
-package moe.fuqiuluo.xposed.hooks.telephony
+package m0e.fuqiuluo.xposed.hooks.telephony
 
 import android.os.Build
 import android.os.Bundle
@@ -12,16 +12,16 @@ import android.telephony.NeighboringCellInfo
 import android.telephony.SignalStrength
 import de.robv.android.xposed.XposedBridge
 import de.robv.android.xposed.XposedHelpers
-import moe.fuqiuluo.xposed.utils.BinderUtils
-import moe.fuqiuluo.xposed.utils.FakeLoc
-import moe.fuqiuluo.xposed.utils.Logger
-import moe.fuqiuluo.xposed.utils.afterHook
-import moe.fuqiuluo.xposed.utils.beforeHook
-import moe.fuqiuluo.xposed.utils.hookAllMethods
-import moe.fuqiuluo.xposed.utils.hookBefore
-import moe.fuqiuluo.xposed.utils.hookMethodBefore
-import moe.fuqiuluo.xposed.utils.onceHookDoNothingMethod
-import moe.fuqiuluo.xposed.utils.onceHookMethodBefore
+import m0e.fuqiuluo.xposed.utils.BinderUtils
+import m0e.fuqiuluo.xposed.utils.FakeLoc
+import m0e.fuqiuluo.xposed.utils.Logger
+import m0e.fuqiuluo.xposed.utils.afterHook
+import m0e.fuqiuluo.xposed.utils.beforeHook
+import m0e.fuqiuluo.xposed.utils.hookAllMethods
+import m0e.fuqiuluo.xposed.utils.hookBefore
+import m0e.fuqiuluo.xposed.utils.hookMethodBefore
+import m0e.fuqiuluo.xposed.utils.onceHookDoNothingMethod
+import m0e.fuqiuluo.xposed.utils.onceHookMethodBefore
 import java.lang.reflect.Modifier
 
 

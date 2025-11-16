@@ -19,7 +19,7 @@ import moe.fuqiuluo.portal.ext.enableRequestGeofence
 import moe.fuqiuluo.portal.ext.minSatelliteCount
 import moe.fuqiuluo.portal.ext.needDowngradeToCdma
 import moe.fuqiuluo.portal.ext.speed
-import moe.fuqiuluo.xposed.utils.FakeLoc
+import m0e.fuqiuluo.xposed.utils.FakeLoc
 import java.io.File
 
 object MockServiceHelper {
