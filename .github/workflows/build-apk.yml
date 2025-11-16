@@ -53,15 +53,7 @@ jobs:
 
       - name: Generate Keystore
         run: |
-          keytool -genkeypair -v \
-            -keystore keystore.jks \
-            -keyalg RSA \
-            -keysize 2048 \
-            -validity 10000 \
-            -alias ${{ secrets.SIGN_ALIAS }} \
-            -storepass ${{ secrets.SIGN_KEYSTORE_PASSWORD }} \
-            -keypass ${{ secrets.SIGN_KEY_PASSWORD }} \
-            -dname "CN=Portal, OU=Development, O=Portal, L=Unknown, ST=Unknown, C=CN"
+          keytool -genkeypair -v -keystore keystore.jks -keyalg RSA -keysize 2048 -validity 10000 -alias "${{ secrets.SIGN_ALIAS }}" -storepass "${{ secrets.SIGN_KEYSTORE_PASSWORD }}" -keypass "${{ secrets.SIGN_KEY_PASSWORD }}" -dname "CN=Portal, OU=Development, O=Portal, L=Unknown, ST=Unknown, C=CN"
 
       - name: Build with Gradle
         run: |
