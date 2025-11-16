@@ -52,8 +52,12 @@ jobs:
           echo "${{ secrets.GOOGLE_SERVICES_JSON }}" | base64 -d > app/google-services.json
 
       - name: Generate Keystore
+        env:
+          KEY_ALIAS: ${{ secrets.SIGN_ALIAS }}
+          STORE_PASSWORD: ${{ secrets.SIGN_KEYSTORE_PASSWORD }}
+          KEY_PASSWORD: ${{ secrets.SIGN_KEY_PASSWORD }}
         run: |
-          keytool -genkeypair -v -keystore keystore.jks -keyalg RSA -keysize 2048 -validity 10000 -alias "${{ secrets.SIGN_ALIAS }}" -storepass "${{ secrets.SIGN_KEYSTORE_PASSWORD }}" -keypass "${{ secrets.SIGN_KEY_PASSWORD }}" -dname "CN=Portal, OU=Development, O=Portal, L=Unknown, ST=Unknown, C=CN"
+          keytool -genkeypair -v -keystore keystore.jks -keyalg RSA -keysize 2048 -validity 10000 -alias "${KEY_ALIAS}" -storepass "${STORE_PASSWORD}" -keypass "${KEY_PASSWORD}" -dname "CN=Portal, OU=Development, O=Portal, L=Unknown, ST=Unknown, C=CN"
 
       - name: Build with Gradle
         run: |
